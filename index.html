@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo_iCases.svg" type="image/x-icon">
+    <title>icase</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wraper">
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <ul>
+                        <li><a href="">3 FOR 2 ON ALL PRODUCTS</a></li>
+                        <li><a href="">14-DAY RETURNS & LIFETIME WARRANTY</a></li>
+                        <li><a href="">FREE UK SHIPPING OVER £50</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="middle-bar">
+                <div id="hemburger">
+                    <button onclick="openmenu()"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="18"
+                            viewBox="0 0 22 18">
+                            <g id="Union_1" data-name="Union 1" transform="translate(1352)" fill="#fff">
+                                <path
+                                    d="M -1334.499877929688 17.5 L -1351.499877929688 17.5 L -1351.499877929688 16.50020027160645 L -1334.499877929688 16.50020027160645 L -1334.499877929688 17.5 Z M -1330.500244140625 9.499899864196777 L -1351.499877929688 9.499899864196777 L -1351.499877929688 8.500100135803223 L -1330.500244140625 8.500100135803223 L -1330.500244140625 9.499899864196777 Z M -1330.500244140625 1.499799966812134 L -1351.499877929688 1.499799966812134 L -1351.499877929688 0.5 L -1330.500244140625 0.5 L -1330.500244140625 1.499799966812134 Z"
+                                    stroke="none" />
+                                <path
+                                    d="M -1333.999877929688 18 L -1351.999877929688 18 L -1351.999877929688 16.00020027160645 L -1333.999877929688 16.00020027160645 L -1333.999877929688 18 Z M -1330.000244140625 9.999899864196777 L -1351.999877929688 9.999899864196777 L -1351.999877929688 8.000100135803223 L -1330.000244140625 8.000100135803223 L -1330.000244140625 9.999899864196777 Z M -1330.000244140625 1.999799966812134 L -1351.999877929688 1.999799966812134 L -1351.999877929688 0 L -1330.000244140625 0 L -1330.000244140625 1.999799966812134 Z"
+                                    stroke="none" fill="#000" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="content">
+                        <div class="logo">
+                            <img src="img/logo_iCases.svg" alt="logo">
+                        </div>
+
+                        <div class="search">
+                            <div class="src-icon">
+                                <input type="text" placeholder="Search here...">
+                                <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 16 16">
+                                        <path id="ic_search"
+                                            d="M1335.522,85.458l-3.945-3.961a6.3,6.3,0,0,0-.825-9.1,6.854,6.854,0,0,0-9.423.8,6.307,6.307,0,0,0,.825,9.1,6.87,6.87,0,0,0,8.133.342l3.975,3.994a.9.9,0,0,0,1.236.023.826.826,0,0,0,.022-1.192Zm-9.066-12.89a4.779,4.779,0,1,1-4.947,4.776A4.862,4.862,0,0,1,1326.456,72.568Z"
+                                            transform="translate(-1319.765 -70.888)" fill="#fff" />
+                                    </svg></button>
+                            </div>
+                        </div>
+
+                        <div class="icons">
+                            <div class="icon-login txt" onclick="open_popup(event)">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path id="ic_user"
+                                            d="M1787.684,87.51a1.116,1.116,0,0,1-.456-.1,1.145,1.145,0,0,1-.576-1.507l2.264-5.145a1.139,1.139,0,0,1,.513-.55l3.507-1.845a.227.227,0,0,1,.242.02,5.5,5.5,0,0,0,6.756,0,.226.226,0,0,1,.241-.02l3.511,1.845a1.138,1.138,0,0,1,.51.55l2.264,5.145h0a1.145,1.145,0,0,1-1.033,1.605Zm4.389-14.7c0-2.926,2.006-5.3,4.481-5.3s4.481,2.372,4.481,5.3-2.006,5.3-4.481,5.3S1792.073,75.732,1792.073,72.807Z"
+                                            transform="translate(-1786.554 -67.51)" />
+                                    </svg>
+                                </div>
+                                <a href="javascript:void(0)">Login/Register</a>
+                                <div id="my-user" class="popup">
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20">
+                                            <path id="ic_user"
+                                                d="M1787.684,87.51a1.116,1.116,0,0,1-.456-.1,1.145,1.145,0,0,1-.576-1.507l2.264-5.145a1.139,1.139,0,0,1,.513-.55l3.507-1.845a.227.227,0,0,1,.242.02,5.5,5.5,0,0,0,6.756,0,.226.226,0,0,1,.241-.02l3.511,1.845a1.138,1.138,0,0,1,.51.55l2.264,5.145h0a1.145,1.145,0,0,1-1.033,1.605Zm4.389-14.7c0-2.926,2.006-5.3,4.481-5.3s4.481,2.372,4.481,5.3-2.006,5.3-4.481,5.3S1792.073,75.732,1792.073,72.807Z"
+                                                transform="translate(-1786.554 -67.51)" />
+                                        </svg>
+                                    </div>
+                                    <div class="view">
+                                        <button>VIEW ACCOUNT</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="icon-src txt">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                                        <path id="ic_search"
+                                            d="M1335.522,85.458l-3.945-3.961a6.3,6.3,0,0,0-.825-9.1,6.854,6.854,0,0,0-9.423.8,6.307,6.307,0,0,0,.825,9.1,6.87,6.87,0,0,0,8.133.342l3.975,3.994a.9.9,0,0,0,1.236.023.826.826,0,0,0,.022-1.192Zm-9.066-12.89a4.779,4.779,0,1,1-4.947,4.776A4.862,4.862,0,0,1,1326.456,72.568Z"
+                                            transform="translate(-1319.765 -70.888)" fill="#000" />
+                                    </svg>
+                                </div>
+                                <a href="#">Search</a>
+                            </div>
+
+                            <div class="icon-order txt" id="order" onclick="open_popup(event)">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32.751" height="18"
+                                        viewBox="0 0 32.751 18">
+                                        <path id="ic_quick_order-01"
+                                            d="M30.309,40.57H16.469a2.625,2.625,0,0,1-2.625-2.625V25.208a2.625,2.625,0,0,1,2.625-2.625h1.946v5.283a2.9,2.9,0,0,0,.236,1.158,2.953,2.953,0,0,0,1.073,1.312,2.838,2.838,0,0,0,.778.374,2.9,2.9,0,0,0,.883.135h4a2.953,2.953,0,0,0,2.461-1.312,2.858,2.858,0,0,0,.374-.781,2.927,2.927,0,0,0,.135-.886v-5.3h1.952a2.625,2.625,0,0,1,2.625,2.625V37.932a2.625,2.625,0,0,1-2.625,2.638ZM25.83,28.525a.758.758,0,0,1-.207.1.778.778,0,0,1-.236.033h-4a.732.732,0,0,1-.308-.062.8.8,0,0,1-.348-.285.863.863,0,0,1-.1-.207.814.814,0,0,1-.033-.24v-5.3h5.578v5.3a.784.784,0,0,1-.351.656ZM11.278,37.653H1.337a1.217,1.217,0,0,1,0-2.431h9.942a1.217,1.217,0,1,1,0,2.431Zm0-4.866H3.765a1.217,1.217,0,1,1,0-2.435h7.514a1.217,1.217,0,0,1,0,2.435Zm0-4.869H6.193a1.217,1.217,0,0,1,0-2.431h5.086a1.217,1.217,0,1,1,0,2.431Z"
+                                            transform="translate(-0.182 -22.57)" fill-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <a href="#">Quick Order</a>
+                                <div id="my-order" class="popup">
+                                    <div class="product">
+                                        <div>
+                                            <img src="img/PWL_img_04.png" alt="">
+                                        </div>
+                                        <div class="prd-txt">
+                                            <p>16 Inch Organiser MacBook Sleeve - Dusty Pink</p>
+                                            <span>£49.00</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="product">
+                                        <div>
+                                            <img src="img/PWL_img_04.png" alt="">
+                                        </div>
+                                        <div class="prd-txt">
+                                            <p>16 Inch Organiser MacBook Sleeve - Dusty Pink</p>
+                                            <span>£49.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <button>VIEW ACCOUNT</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="icon-quotes txt" id="quote" onclick="open_popup(event)">
+                                <div class="icon" id="trolly">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21.679" height="20"
+                                        viewBox="0 0 21.679 20">
+                                        <g id="ic_trolley" transform="translate(-10.74 -13.78)">
+                                            <path id="Path_19500" data-name="Path 19500"
+                                                d="M32.419,33.388H17.239L13.813,20.7H10.74V19.04h4.34l3.426,12.692H32.419Z"
+                                                transform="translate(0 -3.808)" />
+                                            <path id="Path_19501" data-name="Path 19501"
+                                                d="M52.349,34.05v9.379H42.97V34.05h3.244v2.623H49.1V34.05Z"
+                                                transform="translate(-23.332 -14.674)" />
+                                            <path id="Path_19502" data-name="Path 19502"
+                                                d="M55.416,13.78v5.6h-5.6v-5.6h1.935v1.565h1.723V13.78Z"
+                                                transform="translate(-28.29 0)" />
+                                            <circle id="Ellipse_1" data-name="Ellipse 1" cx="1.632" cy="1.632" r="1.632"
+                                                transform="translate(18.868 30.517)" />
+                                            <circle id="Ellipse_2" data-name="Ellipse 2" cx="1.632" cy="1.632" r="1.632"
+                                                transform="translate(26.198 30.517)" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <a href="#">My Quotes</a>
+                                <div id="my-quote" class="popup">
+                                    <div class="product">
+                                        <div>
+                                            <img src="img/PWL_img_04.png" alt="">
+                                        </div>
+                                        <div class="prd-txt">
+                                            <p>16 Inch Organiser MacBook Sleeve - Dusty Pink</p>
+                                            <span>£49.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="chkout-btn">
+                                        <button>PROCEED TO CHECKOUT</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="icon-cart txt" id="cart" onclick="open_popup(event)">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23.63" height="20"
+                                        viewBox="0 0 23.63 20">
+                                        <path id="ic_cart-01"
+                                            d="M23.393,18.285a.886.886,0,0,1-.584.3L7.991,20.322a1.711,1.711,0,0,0,.064.3c.033.137.061.262.087.376a1.753,1.753,0,0,1,.035.314,2.677,2.677,0,0,1-.345.907H20.9a.881.881,0,0,1,.643.272.91.91,0,0,1-.643,1.548H6.358a.865.865,0,0,1-.638-.272.879.879,0,0,1-.272-.638,1.576,1.576,0,0,1,.156-.562,9.239,9.239,0,0,1,.421-.844c.184-.321.274-.5.291-.541L3.8,9.5H.9A.87.87,0,0,1,.267,9.23a.9.9,0,0,1,0-1.278A.865.865,0,0,1,.9,7.68H4.541a.907.907,0,0,1,.4.092.886.886,0,0,1,.284.222,1.085,1.085,0,0,1,.187.347,2.753,2.753,0,0,1,.1.376c.024.1.045.236.078.421s.057.3.064.362H22.719a.874.874,0,0,1,.64.269.865.865,0,0,1,.269.64V17.68A.9.9,0,0,1,23.393,18.285ZM21.809,25.86a1.81,1.81,0,1,1-.529-1.285,1.749,1.749,0,0,1,.529,1.285Zm-12.724,0a1.819,1.819,0,1,1-.532-1.285,1.753,1.753,0,0,1,.532,1.285Z"
+                                            transform="translate(0.001 -7.68)" fill-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <a href="#">Mini Cart</a>
+                                <div id="my-cart" class="popup">
+                                    <div class="crt-txt">
+                                        <span class="cart-title">2Items in Cart</span>
+                                        <span class="cart-total">Cart Subtotal:<br><span id="total"></span></span>
+                                    </div>
+                                    <div class="chkout-btn">
+                                        <button>PROCEED TO CHECKOUT</button>
+                                    </div>
+                                    <div id="cart-product">
+
+                                    </div>
+                                    <div class="view">
+                                        <button>VIEW AND EDIT CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav" id="nav-bar">
+                <div class="nav-bar">
+                    <div class="container">
+                        <button class="cls-btn" onclick="closemenu()">X</button>
+                        <ul>
+                            <li><a href="product.html">IPAD CASES</a></li>
+                            <li onclick="openmegamenu()"><a href="javascript:void(0)">IPHONE CASES</a></li>
+                            <div id="mega-menu">
+                                <div class="row">
+                                    <div class="colm">
+                                        <ul>
+                                            <li><a href="#">iPad Air 4 (10.9”)</a></li>
+                                            <li><a href="#">iPad 10.2” (7th & 8th Gen)</a></li>
+                                            <li><a href="#">iPad 9.7” (5th & 6th Gen)</a></li>
+                                            <li><a href="#">iPad 2, 3 & 4 Cases</a></li>
+                                            <li><a href="#">iPad Pro 9.7”</a></li>
+                                            <li><a href="#">iPad Pro 11” iPad Pro 11 (2018) 1st Gen.</a></li>
+                                            <li> <a href="#">iPad Pro 11” (2020) 2nd Gen.</a></li>
+                                            <li><a href="#">iPad Pro 11 (2021) 3rd Gen.</a></li>
+                                            <li><a href="#">iPad Pro 10.5”</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="colm">
+                                        <ul>
+                                            <li><a href="#">iPad Air 4 (10.9”)</a></li>
+                                            <li><a href="#">iPad 10.2” (7th & 8th Gen)</a></li>
+                                            <li><a href="#">iPad 9.7” (5th & 6th Gen)</a></li>
+                                            <li><a href="#">iPad 2, 3 & 4 Cases</a></li>
+                                            <li><a href="#">iPad Pro 9.7”</a></li>
+                                            <li><a href="#">iPad Pro 11” iPad Pro 11 (2018) 1st Gen.</a></li>
+                                            <li> <a href="#">iPad Pro 11” (2020) 2nd Gen.</a></li>
+                                            <li><a href="#">iPad Pro 11 (2021) 3rd Gen.</a></li>
+                                            <li><a href="#">iPad Pro 10.5”</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="">MACBOOK SLEEVES</a></li>
+                            <li><a href="">SCREEN PROTECTORS</a></li>
+                            <li><a href="">OUTLET</a></li>
+                            <li><a href="">PRODUCT REGISTRATION</a></li>
+                            <li><a href="">EDUCATION</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
